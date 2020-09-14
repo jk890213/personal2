@@ -172,6 +172,9 @@
     perspective-origin: 50% 50%;
     transform-style: preserve-3d;
 }
+.teach .wrap .card a{
+    display: flex;
+}
 .teach .wrap .item{
     width: 100%;
     position: relative;

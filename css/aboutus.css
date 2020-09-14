@@ -43,7 +43,7 @@
 .discript .wrap p{
     text-align: center;
     font-size: 36px;
-    width: 270px;
+    min-width: 275px;
 }
 .discript .wrap span{
     display: block;
