@@ -1,0 +1,178 @@
+*{
+    box-sizing : border-box;    
+    text-decoration: none;
+}
+body{
+    background-color: #212121;
+    font-family: "Roboto", "微軟正黑體";
+}
+h2{
+    font-size: 36px;
+    color: #FAFAFA;
+    font-weight: bold;
+    line-height: 3.5;
+}
+p{
+    font-size: 24px;
+    color: #FAFAFA;
+    line-height: 1.8;
+}
+button{
+    font-size: 24px;
+    /* color: #FAFAFA; */
+    border: 2px solid #FAFAFA;
+    border-radius: 30px;
+    background-color: hsla(0, 0%, 0%, 0);
+    width: 150px;
+    height: 50px;
+    font-family: "Roboto", "微軟正黑體";
+    outline: none; 
+}
+button a{
+    color: #fafafa;
+}
+button:hover a{
+    color: #212121;
+}
+button:hover{    
+    background: linear-gradient(120deg, #fb8076 0%, #feb85d 100%);
+    /* color: #212121; */
+    border: transparent;
+    cursor: pointer;
+}
+header{    
+    width: 100%;
+    min-width: 1200px;
+    height: 80px;
+    display: flex;
+    background-color: #212121;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+header a img{
+    width: 80px;
+    height: 80px;
+    margin-right: -80px;
+}
+nav{
+    width: 1200px;    
+    height: 100%;
+    margin: auto;
+}
+nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+nav ul li{  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+
+    transition: .4s;
+}
+nav ul li::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 15px;
+    border-bottom: 1px solid #FFB74D;
+
+    transition: .4s;
+}
+nav ul li:hover{
+    transform: translateY(-5px);
+}
+nav ul li:hover::after{
+    left: 25%;
+    right: 25%;
+}
+nav a{
+    text-decoration: none;
+    width: 100%;
+    color: #fafafa;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    min-width: 1200px;
+    background-color: #9E9E9E;
+    padding-top: 35px;
+}
+footer .icon{
+    margin: auto;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+footer img{
+    height: 57px;
+    width: 57px;
+}
+footer p{
+    width: 1100px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+    color: #212121;    
+    font-size: 16px;
+}
+footer p::before{
+    content: "";
+    border-top: 10px solid hsla(0, 0%, 0%, 0);
+    border-right: 10px solid hsla(0, 0%, 0%, 0);
+    border-left: 10px solid hsla(0, 0%, 0%, 0);
+    border-bottom: 16px solid #B71C1C;
+    /* 為什麼不能用translate移動? */
+    position: relative;
+    bottom: 22px;
+    margin: 5px;
+}
+.copy{
+    text-align: center;
+    padding: 15px;
+}
+.path{
+    margin: 60px 80px;
+}    
+.path a{
+    color: #fafafa;    
+}
+.path div{
+    display: inline-block;
+    color: #fafafa;
+}
+/* .path a::after{
+    content: "/";
+    padding: 4px;
+    color: #fafafa;
+} */
+.path a{
+    text-decoration: underline;
+}
+.path a:last-child{
+    /* font-weight: bold; */
+    text-decoration: none;
+    color: #FFB74D;
+}
+.path a + a::before{
+    content: "/";
+    padding: 4px;
+    color: #fafafa;
+}
+.-on::after{
+    content: "";
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 15px;
+    border-bottom: 1px solid #FFB74D;

@@ -1,0 +1,121 @@
+.origin{
+    width: 1200px;
+    height: 750px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.origin img{
+    width: 525px;
+    height: 525px;
+    border-radius: 50%;
+}
+.origin .txt{
+    width: 40%;
+    align-self: flex-end;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+.origin .txt p{
+    margin-bottom: 15px;
+}
+.background{
+    background: linear-gradient(173deg, #212121 25%, #FFB74D 25% 75%, #212121 75%);
+    width: 100%;
+    min-width: 1200px;
+}
+.discript{
+    padding-top: 110px;
+    width: 1200px;
+    margin: auto;
+    height: 750px;
+}
+.discript h2{
+    text-align: center;
+    font-size: 76px;
+    font-weight: 900;
+}
+.discript .wrap{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.discript .wrap p{
+    text-align: center;
+    font-size: 36px;
+    width: 270px;
+}
+.discript .wrap span{
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 48px;
+}
+.member{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    height: 1000px;
+}
+.member h2{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 40px;
+}
+.member h3{
+    font-size: 36px;
+    color: #FAFAFA;
+    font-weight: bold;
+    line-height: 3.5;
+}
+.member .wrap{
+    display: flex;
+    justify-content: space-around;
+}
+.member .item{
+    width: 324px;
+    border: 1px solid #fafafa;
+    transition: .4s;
+}
+.member .item img{
+    width: 100%;
+    vertical-align: middle;
+}
+.member .wrap .item .txt{
+    width: 100%;
+    position: relative;
+    background: transparent;
+    /* transition: .4s; */
+    /* 為何txt有transition卻沒有轉場效果? */
+    /* background-color才有轉場，background沒有 */
+}
+.member .item h3::after{
+    content: "";
+    border-top: 36px solid transparent;
+    border-right: 161px solid #212121;
+    border-left: 161px solid #212121;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+}
+.member .item p{
+    padding: 0 12px;
+}
+.member .item:hover{
+    transform: translateY(-15px);
+    border: 1px solid #212121;
+}
+.member .item:hover .txt{
+    background: linear-gradient(180deg, #fb8076 0%, #feb85d 100%);
+}
+.member .item:hover h3::after{
+    border-right: 161px solid #fb8076;
+    border-left: 161px solid #fb8076;
+}
+.member .item:hover h3{
+    color: #212121;
+}
+.member .item:hover p{
+    color: #212121;
+}

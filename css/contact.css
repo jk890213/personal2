@@ -1,0 +1,61 @@
+.wrap{
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 200px;  
+}
+label{
+    color: #fafafa;
+    padding-bottom: 10px;
+}
+input{
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    font-size: 20px; /*直接在框格裡改變大小*/
+}
+textarea{
+    border-radius: 10px;
+    padding: 5px;
+    resize: none;
+    font-size: 20px;
+    outline: none;
+}
+.pic{
+    width: 50%;
+    padding-top: 5em;
+}
+.pic img{
+    width: 100%;
+    border-radius: 50%;
+}
+form{
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    font-size: 24px;
+}
+form input[type="submit"]{
+    margin: 20px auto;
+    font-size: 20px;
+    color: #FAFAFA;
+    border: 2px solid #FAFAFA;
+    border-radius: 30px;
+    background: transparent;
+    width: 150px;
+    height: 50px;
+    font-family: "Roboto", "微軟正黑體";
+    outline: none; 
+    /* transition: .3s;     */
+}
+form input[type="submit"]:hover{
+    cursor: pointer;
+    background: linear-gradient(120deg, #fb8076 0%, #feb85d 100%);
+    color: #212121;
+    border: 2px solid #212121;
+}

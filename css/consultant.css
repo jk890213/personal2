@@ -1,0 +1,83 @@
+.path{
+    position: absolute;
+    /* top: 40px; */
+    z-index: 2;
+}
+.wrap{
+    background-image: url(../img/gallery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-width: 1200px;
+    height: calc(100vh - 80px);
+}
+.container{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    border: 1px solid transparent;
+    position: relative;
+}
+.container div{
+    border: 2px solid #fafafa;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, .3);
+}
+.container p{
+    line-height: 1.6;
+    font-weight: bold;
+}
+.container div:nth-child(1){
+    width: 454px;
+    height: 148px;
+    margin: 140px 0 0 40px;
+}
+.container div:nth-child(2){
+    width: 524px;
+    height: 238px;
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+}
+.container div:nth-child(3){
+    width: 328px;
+    height: 182px;
+    position: absolute;
+    right: 15%;
+    bottom: 50%;
+}
+.container div:nth-child(3) p, .container div:nth-child(4) p{
+    font-size: 20px;
+}
+.container div:nth-child(4){
+    width: 328px;
+    height: 152px;
+    position: absolute;
+    left: 25%;
+    bottom: 40%;
+}
+.container div:nth-child(5){
+    width: 138px;
+    height: 155px;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translateX(50%);
+}
+.container div:nth-child(5) p{
+    font-size: 10px;
+}
+button{
+    width: 90px;
+    height: 30px;
+    font-size: 10px;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 110%);
+}

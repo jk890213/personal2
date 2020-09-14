@@ -1,0 +1,58 @@
+.paper{
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 200px;
+}
+.paper .container{
+    width: 100%;
+}
+.paper .container .item + .item{
+    width: 100%;
+    display: flex;
+    margin-bottom: 200px;
+}
+.container .item + .item .pic{
+    width: 30%;
+    display: flex;
+    align-items: center;    
+}
+.container .item .txt{
+    width: 70%;
+    padding: 0 40px;
+    text-align: justify;
+}
+.container .item .pic img{
+    width: 100%;
+    vertical-align: middle;
+}
+.container .item h3{
+    font-size: 36px;
+    color: #FAFAFA;
+    font-weight: bold;
+    line-height: 2.7;
+}
+.container .item .txt p{
+    padding-left: 1em;
+    margin-bottom: 20px;
+}
+.container .item:first-child{
+    margin-bottom: 170px;
+}
+.container .item:first-child::after{
+    content: "";
+    clear: both;  
+}
+.container .item:first-child .pic{
+    width: 30%;
+    float: right;
+    padding-top: 5px;
+    margin: 25px;
+    /*float 要在上 */
+}
+.container .item:first-child p{
+    text-align: justify;
+    padding: 1em;
+}
+footer{
+    margin-top: 280px;
+}

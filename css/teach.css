@@ -1,0 +1,86 @@
+.wrap{
+    width: 100%;
+    min-width: 1200px;
+    display: flex;    
+}
+aside{
+    width: 20%;
+    min-width: 280px;
+    padding-top: 100px;
+}
+aside .txt{
+    width: 280px;
+    margin: auto;
+}
+aside ol{
+    width: 100%;
+}
+aside li{
+    width: 100%;
+    color: #fafafa;
+    padding: 30px;
+}
+aside li span:hover{
+    cursor: pointer;
+}
+aside h3{
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #fafafa;
+    text-align: center;
+}
+main{
+    width: 80%;
+    min-width: 920px;
+}
+main .container{
+    width: 100%;
+    min-width: 900px;
+    height: 165px;
+    overflow: hidden;
+    box-shadow: 0px -10px 8px 3px rgb(85, 64, 51);
+    transition: .5s;
+}
+
+main .container:hover{
+    height: 200px;
+    margin-top: -15px;
+}
+main .container:nth-child(1), main .container:nth-child(4), main .container:nth-child(7), main .container:nth-child(10){
+    background-color: rgb(241, 149, 56);
+}
+main .container:nth-child(2), main .container:nth-child(5), main .container:nth-child(8), main .container:nth-child(11){
+    background-color: rgb(233, 97, 56);
+}
+main .container:nth-child(3), main .container:nth-child(6), main .container:nth-child(9){
+    background-color: rgb(192, 53, 53);
+}
+
+main .container:last-child{
+    height: 400px;
+}
+main .container:last-child img{
+    width: 100%;
+    margin-top: 50px;
+}
+main .container h3{
+    font-size: 42px;
+    font-weight: bold;
+    padding: 70px 0 20px;
+    text-align: center;
+    color: rgb(71, 44, 44);
+}
+main .container h3:hover{
+    cursor: pointer;
+}
+main .txt{
+    width: 900px;
+    margin: auto;
+}
+main p{
+    width: 100%;
+    padding: 40px 30px 30px 50px;
+    color: rgb(43, 34, 34);
+}

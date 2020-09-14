@@ -1,0 +1,124 @@
+
+@media screen and (min-width: 1701px) and (max-width: 1800px){
+    .top .container{
+        max-width: 1000px;
+    }
+    .top .container button{
+        transform: translateX(50px);
+    }
+}
+@media screen and (min-width: 1651px) and (max-width: 1700px){
+    .top .container{
+        max-width: 850px;
+    }    
+    .top .container button{
+        transform: translateX(100px);
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1650px){
+    .top .container{
+        max-width: 750px;
+    }    
+    .top .container button{
+        transform: translateX(120px);
+    }
+    nav{
+        width: 1140px;
+    }    
+}
+@media screen and (min-width: 1200px) and (max-width: 1440px){
+    nav{
+        width: 1000px;
+    }
+    header a img{
+        margin-right: -20;
+    }
+    .container{
+        max-width: 1140px;
+    }
+    .paper{
+        height: 810px;
+        background: linear-gradient(197deg, #212121 315px, #B71C1C 215px 755px, #212121 755px);
+        margin-bottom: 150px;
+    }
+    .paper h2{
+        transform: translate(50%, 30%);
+        padding-top: 0;
+    }
+    .paper .item .pic{
+        /* position: absolute; */
+        left: 190px;
+        top: 230px;
+    }
+    .center{
+        width: 370px;
+        height: 370px;
+    }
+    .paper .item .pic > div + div{
+        width: 200px;
+        height: 200px;
+    }
+    .paper .item .txt{
+        right: 20px;
+        top: 310px;
+    }
+    .paper button{
+        top: 715px;
+        right: 150px;
+    }
+    .teach .item .txt p{
+        font-size: 20px;
+    }
+    .book{
+        margin-bottom: 0px;
+    }
+    .consultant{
+        background: linear-gradient(166deg, #212121 505px, #B71C1C 505px 945px, #212121 945px);
+        padding-top: 320px;
+        margin-bottom: 100px;
+    }
+    .consultant .item{
+        padding-top: 40px;
+    }
+    .consultant .item .txt{
+        max-width: 500px;
+    }
+
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    nav{
+
+    }
+
+
+
+    .paper{
+        min-width: 1200px;
+    }
+    .teach{
+        min-width: 1200px;
+    }
+    .book{
+        min-width: 1200px;
+    }
+    .consultant{
+        min-width: 1200px;
+    }
+    header{
+        min-width: 1200px;
+    }
+    footer{
+        min-width: 1200px;
+    }
+    
+}
+@media screen and (min-width: 992px) and (max-width: 1100px){
+    
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    
+}
