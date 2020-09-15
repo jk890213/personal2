@@ -72,8 +72,7 @@
 .paper .item{
     width: 100%;
 }
-/* 為什麼動畫不會執行 */
-/* 要先打transform */
+
 @keyframes rotate{
     from {
         transform: rotate(0deg);
@@ -137,6 +136,7 @@
 .paper .item .txt a{
     color: #fafafa;
     font-weight: bold;
+    text-decoration: underline;
 }
 .paper button{
     position: absolute;

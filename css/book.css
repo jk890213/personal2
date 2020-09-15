@@ -12,6 +12,10 @@
     display: flex;
     flex-flow: column;
 }
+.wrap .item:hover img{
+    transform: translateY(-20px) scale(1.15);
+    transition: .4s;
+}
 .wrap .item img{
     width: 100%;
     height: 300px;
