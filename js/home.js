@@ -6,6 +6,8 @@
 //     });
 
 $(document).ready(function(){
+
+    
     $(function(){ $('#scroll').click(function(){ 
         $('html,body').animate({scrollTop:$('#teach').offset().top}, 500);});  
     });

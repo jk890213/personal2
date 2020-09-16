@@ -44,11 +44,11 @@ main .container{
     box-shadow: 0px -10px 8px 3px rgb(85, 64, 51);
     transition: .5s;
 }
-/* 
+
 main .container:hover .control{
-    height: 150px;
+    /* height: 150px; */
     margin-top: -15px;
-} */
+}
 main .container:nth-child(1), main .container:nth-child(4), main .container:nth-child(7), main .container:nth-child(10){
     background-color: rgb(241, 149, 56);
 }
@@ -69,9 +69,11 @@ main .container:last-child img{
 main .container h3{
     font-size: 42px;
     font-weight: bold;
-    padding: 70px 0 20px;
+    padding: 50px 0 40px;
     text-align: center;
     color: rgb(71, 44, 44);
+    transition: .5s;
+    margin-top: 0;
 }
 main .container h3:hover{
     cursor: pointer;
