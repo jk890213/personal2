@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/home_rwd.css">   
     
+    <link rel="stylesheet" href="../lightslider-master/src/css/lightslider.css">
 </head>
 <body>
     <header>
@@ -113,9 +114,17 @@
                 <h2>推薦書籍</h2>
                 <div class="item">
                     <div class="autoplay">
-                        <a href="./book.html"><img src="../img/book1.png" alt=""></a>
-                        <!-- <a href="./book.html"><img src="../img/book0.png" alt=""></a>
-                        <a href="./book.html"><img src="../img/book3.png" alt=""></a> -->
+                        <ul id="lightSlider">
+                            <li>           
+                                <a href="./book.html"><img src="../img/book0.png" alt=""></a>>
+                            </li>
+                            <li>
+                                <a href="./book.html"></a><img src="../img/book1.png" alt=""></a>
+                            </li>                            
+                            <li>
+                                <a href="./book.html"></a><img src="../img/book3.png" alt=""></a>>
+                            </li>
+                        </ul>
                     </div>
                     <div class="txt">
                         <p>投資的面貌包羅萬象，藉由別人的故事或經驗，可以幫助投資者擁有多元的視角，在面對各式情況時也能更加地游刃有餘。<br><br>此處特別推薦3本必讀經典及15本精選書籍，供讀者多方吸收。</p>
@@ -153,5 +162,6 @@
 
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../js/home.js"></script>
+    <script src="../lightslider-master/src/js/lightslider.js"></script>
 </body>
 </html>
