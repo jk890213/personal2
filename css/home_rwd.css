@@ -22,17 +22,10 @@
     .top .container button{
         transform: translateX(120px);
     }
-    nav{
-        width: 1140px;
-    }    
+    
 }
 @media screen and (min-width: 1200px) and (max-width: 1440px){
-    nav{
-        width: 1000px;
-    }
-    header a img{
-        margin-right: -20;
-    }
+    
     .container{
         max-width: 1140px;
     }
@@ -86,12 +79,6 @@
     
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
-    nav{
-
-    }
-
-
-
     .paper{
         min-width: 1200px;
     }

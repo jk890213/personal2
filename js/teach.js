@@ -7,20 +7,20 @@ $(document).ready(function(){
         $(control[i]).click(function(){
             let txt = document.getElementsByClassName("txt");
             // $(txt[i]).slideToggle();
-            if(txt[i].classList.contains("-on")){
+            if(txt[i].classList.contains("-open")){
                 $(txt[i]).slideUp();
-                txt[i].classList.remove("-on");
+                txt[i].classList.remove("-open");
             }else{
                 $(txt[i]).slideDown();
-                txt[i].classList.add("-on");
+                txt[i].classList.add("-open");
                 
             };
             
             
             for(j = 0; j < txt.length; j++){
-                if(txt[j] != txt[i] && txt[j].classList.contains("-on")){
+                if(txt[j] != txt[i] && txt[j].classList.contains("-open")){
                     $(txt[j]).slideUp();
-                    txt[j].classList.remove("-on");
+                    txt[j].classList.remove("-open");
                 };
             };
 
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
         control[i].addEventListener("mouseenter", function(){
             let txt = document.getElementsByClassName("txt");
-            if(txt[i].classList.contains("-on")){
+            if(txt[i].classList.contains("-open")){
 
             }else{
                 control[i].style.height = "150px";
@@ -44,7 +44,7 @@ $(document).ready(function(){
 
         control[i].addEventListener("mouseleave", function(){
             let txt = document.getElementsByClassName("txt");
-            if(txt[i].classList.contains("-on")){
+            if(txt[i].classList.contains("-open")){
 
             }else{
                 // control[i].removeAttribute("style");
