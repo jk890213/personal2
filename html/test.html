@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股市操作指南</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/test.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="../hamburgers-master/dist/hamburgers.min.css" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="../lightslider-master/src/css/lightslider.css">
+</head>
+<body>
+    <header>
+        <a href="./home.html"><img src="../img/logo.jpg" alt="LOGO" class="logo"></a>
+
+        <button class="hamburger hamburger--slider is-active" type="button">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <nav>
+            <ul>
+                <li><a href="./aboutus.html">關於我們</a></li>
+                <li><a href="./paper.html">研究報告</a></li>
+                <li><a href="./teach.html">交易指南</a></li>
+                <li><a href="./book.html">推薦書籍</a></li>
+                <li><a href="./consultant.html">顧問諮詢</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../lightslider-master/src/js/lightslider.js"></script>
+    <script>
+        // jQuery 版本：DOM 載入完成之後執行
+        $(function(){
+    
+            // hamburger icon 的切換
+            $("button.hamburger").on("click", function(){
+                $(this).toggleClass("is-active");
+            });
+
+        });
+    </script>
+
+    </body>

@@ -1,8 +1,11 @@
+
 .origin{
-    width: 1200px;
-    height: 750px;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 750px;
     margin: 60px auto;
     display: flex;
+    flex-flow: wrap;
     justify-content: space-around;
 }
 .origin img{
@@ -21,12 +24,12 @@
 }
 .background{
     background: linear-gradient(173deg, #212121 25%, #FFB74D 25% 75%, #212121 75%);
-    width: 100%;
-    min-width: 1200px;
+    width: 100%;    
 }
 .discript{
     padding-top: 110px;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     height: 750px;
 }
@@ -36,9 +39,11 @@
     font-weight: 900;
 }
 .discript .wrap{
-    display: flex;
+    display: flex;    
+    justify-content: space-around;
+    flex-flow: wrap;
     width: 100%;
-    justify-content: space-between;
+    
 }
 .discript .wrap p{
     text-align: center;
@@ -52,10 +57,11 @@
     font-size: 48px;
 }
 .member{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     text-align: center;
-    height: 1000px;
+    /* height: 1000px; */
 }
 .member h2{
     font-size: 48px;
@@ -71,9 +77,13 @@
 .member .wrap{
     display: flex;
     justify-content: space-around;
+    flex-flow: wrap;
+    padding-bottom: 200px;
 }
 .member .item{
-    width: 324px;
+    width: 100%;   
+    max-width: 324px;
+    margin-bottom: 50px;
     border: 1px solid #fafafa;
     transition: .4s;
 }
@@ -118,4 +128,46 @@
 }
 .member .item:hover p{
     color: #212121;
+}
+/* @media screen and (max-width: 1100px) and (min-width: 992px){
+    .member .item{
+        
+    }
+} */
+@media screen and (max-width: 991px){
+    .origin .txt{
+        width: 90%; 
+        max-width: 720px;       
+    }
+    .origin img{
+        width: 90%;
+        height: auto;
+        max-width: 720px;
+
+    }
+    .background{
+        background: none;
+        background-color: #FFB74D;        
+    }
+    .discript{
+        height: auto;
+        padding: 0 0 100px 0;
+    }
+    .discript p{        
+        width: 85%;
+        max-width: 500px;        
+        
+    }
+    .discript p span{
+        border-bottom: 4px solid rgba(33, 33, 33, .5);       
+        border-radius: 0 0 200px 200px;
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+        font-size: 40px;
+    }
+    .member .item{
+        width: 100%;
+        max-width: 324px;
+    }
+    
 }
