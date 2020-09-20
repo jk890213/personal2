@@ -6,15 +6,15 @@ $(document).ready(function(){
     for(let i = 0; i < control.length; i++){
         $(control[i]).click(function(){
             let txt = document.getElementsByClassName("txt");
-            // $(txt[i]).slideToggle();
-            if(txt[i].classList.contains("-open")){
-                $(txt[i]).slideUp();
-                txt[i].classList.remove("-open");
-            }else{
-                $(txt[i]).slideDown();
-                txt[i].classList.add("-open");
+            $(txt[i]).slideToggle();
+            // if(txt[i].classList.contains("-open")){
+            //     $(txt[i]).slideUp();
+            //     txt[i].classList.remove("-open");
+            // }else{
+            //     $(txt[i]).slideDown();
+            //     txt[i].classList.add("-open");
                 
-            };
+            // };
             
             
             for(j = 0; j < txt.length; j++){

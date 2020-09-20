@@ -2,7 +2,8 @@
     width: 100%;
 }
 .container{
-    width: 1200px;
+    width: 95%;
+    max-width: 1140px;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -58,4 +59,16 @@ form input[type="submit"]:hover{
     background: linear-gradient(120deg, #fb8076 0%, #feb85d 100%);
     color: #212121;
     border: 2px solid #212121;
+}
+
+@media screen and (max-width: 991px){
+    .container{
+        max-width: 720px;
+    }
+    form{
+        width: 90%;
+    }
+    .pic{
+        display: none;
+    }
 }

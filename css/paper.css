@@ -1,24 +1,31 @@
 .paper{
-    width: 1200px;
+    max-width: 1140px;
+    width: 100%;
     margin: auto;
     margin-bottom: 200px;
 }
 .paper .container{
     width: 100%;
+    padding: 0 35px;
 }
 .paper .container .item + .item{
     width: 100%;
     display: flex;
+    justify-content: space-between;
     margin-bottom: 200px;
 }
 .container .item + .item .pic{
     width: 30%;
-    display: flex;
-    align-items: center;    
+    display: flex; 
+}
+.container .item:nth-child(2) .pic{
+    align-self: flex-end;
+}
+.container .item:nth-child(3) .pic{
+    align-items: center;
 }
 .container .item .txt{
-    width: 70%;
-    padding: 0 40px;
+    width: 65%;
     text-align: justify;
 }
 .container .item .pic img{
@@ -33,7 +40,9 @@
 }
 .container .item .txt p{
     padding-left: 1em;
-    margin-bottom: 20px;
+}
+.container .item .txt p + p{    
+    margin-top: 20px;
 }
 .container .item:first-child{
     margin-bottom: 170px;
@@ -55,4 +64,41 @@
 }
 footer{
     margin-top: 280px;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px){
+    .paper{
+        max-width: 960px;
+    }
+    .container .item:nth-child(2) .txt{
+        width: 100%;
+    }
+    .container .item:nth-child(2) .txt p{
+        font-size: 26px;
+    }
+    .container .item:nth-child(2) .pic{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 991px){
+    .paper{
+        max-width: 720px;
+    }
+    .paper .container .item + .item{
+        margin-bottom: 150px;
+    }
+    .container .item + .item .txt{
+        width: 100%;
+    }
+    .container .item + .item .txt p{
+        font-size: 26px;
+    }
+    .container .item .pic{
+        display: none;
+    }
+    .container .item + .item .pic{
+        display: none;
+    }
 }

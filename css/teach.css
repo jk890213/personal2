@@ -1,7 +1,7 @@
 
 .wrap{
     width: 100%;
-    min-width: 1200px;
+    /* min-width: 1200px; */
     display: flex;    
 }
 aside{
@@ -28,25 +28,19 @@ aside h3{
     width: 100%;
     font-size: 28px;
     font-weight: bold;
-    /* line-height: 1.6; */
     color: #fafafa;
     text-align: center;
 }
 main{
     width: 80%;
-    min-width: 920px;
 }
 main .container{
     width: 100%;
-    min-width: 900px;
-    /* height: 165px; */
-    /* overflow: hidden; */
     box-shadow: 0px -10px 8px 3px rgb(85, 64, 51);
     transition: .5s;
 }
 
-main .container:hover .control{
-    /* height: 150px; */
+main .container:hover .control{    
     margin-top: -15px;
 }
 main .container:nth-child(1), main .container:nth-child(4), main .container:nth-child(7), main .container:nth-child(10){
@@ -58,14 +52,6 @@ main .container:nth-child(2), main .container:nth-child(5), main .container:nth-
 main .container:nth-child(3), main .container:nth-child(6), main .container:nth-child(9){
     background-color: rgb(192, 53, 53);
 }
-
-/* main .container:last-child{
-    height: 400px;
-}
-main .container:last-child img{
-    width: 100%;
-    margin-top: 50px;
-} */
 main .container h3{
     font-size: 42px;
     font-weight: bold;
@@ -79,7 +65,7 @@ main .container h3:hover{
     cursor: pointer;
 }
 main .txt{
-    width: 900px;
+    width: 90%;
     margin: auto;
     display: none;
 }
@@ -87,4 +73,41 @@ main p{
     width: 100%;
     padding: 40px 30px 30px 50px;
     color: rgb(43, 34, 34);
+}
+
+@media screen and (max-width: 991px) and (min-width: 576px){
+    .wrap{
+        display: flex;
+        justify-content: center;
+    }
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    main .container h3{
+        font-size: 36px;
+    }
+    main p{
+        padding: 0 30px 30px 50px;
+    }
+}
+@media screen and (max-width: 575px){
+    .wrap{
+        display: flex;
+        justify-content: center;
+    }
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    main .container h3{
+        font-size: 30px;
+    }
+    main p{
+        padding: 0 30px 30px 50px;
+    }
 }

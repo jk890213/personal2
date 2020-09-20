@@ -16,5 +16,12 @@ hamburg.addEventListener('click', function() {
     }else{
 		nav.classList.add("-translate");
 	}
+});
 
+//為何不能停止預設行為?
+var noa = document.getElementsByClassName("-on")[0];
+noa.addEventListener("click", function(e){
+	//if(noa.classList.contains("-on")){
+		e.preventDeault();
+	//}	
 });
