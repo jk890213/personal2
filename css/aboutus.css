@@ -143,6 +143,7 @@
         width: 90%;
         height: auto;
         max-width: 720px;
+        display: none;
 
     }
     .background{
@@ -160,7 +161,7 @@
     }
     .discript p span{
         border-bottom: 4px solid rgba(33, 33, 33, .5);       
-        border-radius: 0 0 200px 200px;
+        border-radius: 0 0 190px 190px;
         margin-bottom: 25px;
         padding-bottom: 20px;
         font-size: 40px;
