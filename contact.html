@@ -42,18 +42,18 @@
                 <div class="pic">
                     <img src="img/contact.jpg" alt="聯繫我們">
                 </div>
-                <form action="#">
-                    <label for="name">姓名：</label>
+                <form id="form" action="#">
+                    <label for="name"><span>*</span>姓名：</label>
                     <input type="text" id="name">
-                    <label for="email">E-mail：</label>
+                    <label for="email"><span>*</span>E-mail：</label>
                     <input type="text" id="email">
                     <label for="phone">聯絡電話：</label>
                     <input type="text" id="phone">
-                    <label for="money">操作資金：</label>
+                    <label for="money"><span>*</span>操作資金：</label>
                     <input type="text" id="money">
-                    <label for="earn">預期投報率：</label>
+                    <label for="earn"><span>*</span>預期投報率：</label>
                     <input type="text" id="earn">
-                    <label for="think">您面對的困難或所需要的協助：</label>
+                    <label for="think"><span>*</span>您面對的困難或所需要的協助：</label>
                     <textarea name="think" id="think" cols="30" rows="10"></textarea>
                     <input type="submit" value="送出資料">
                 </form>
@@ -71,6 +71,8 @@
         <div class="copy">&copy; 2020 JK All Rights Reserved</div>
     </footer>
 
+    <script src="js/is.min.js"></script>
     <script src="js/basis.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
