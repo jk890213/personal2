@@ -66,7 +66,7 @@ $(document).ready(function(){
     for(let i = 0;i < index.length; i++){
         
         $(function(){ $(index[i]).click(function(){ 
-            $('html,body').animate({scrollTop:$(control[i]).offset().top}, 500);});  
+            $('html,body').animate({scrollTop:$(control[i]).offset().top - 60}, 500);});  
         });
     };    
     

@@ -7,7 +7,7 @@
     border-color: transparent transparent #fafafa transparent;
     position: relative;
     top: -50px;
-    left: -20px; 
+    left: -20px;
 } */
 .top{
     width: 100%;
@@ -237,7 +237,7 @@
     width: 90%;
     margin: 60px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .book .autoplay{
     width: 27%;
@@ -370,6 +370,9 @@ button:hover a{
     .paper{
         height: 1200px;
         background: none;
+        margin-bottom: 100px;
+        /* background: linear-gradient(197deg, #212121 415px, #B71C1C 415px 955px, #212121 955px); */
+        /* background: linear-gradient(198.5deg, #212121 615px, #B71C1C 615px 1105px, #212121 1105px); */
     }
     .paper .item .txt{
         right: 13%;
@@ -400,22 +403,443 @@ button:hover a{
         height: 420px;
     }    
 }
-@media screen and (max-width: 991px) and (min-width: 768px){
-    .paper .container, .teach .container, .book .container, .consultant .container{
-        width: 95%;
+@media screen and (max-width: 991px) and (min-width: 768px){    
+    .top .container, .paper .container, .teach .container, .book .container, .consultant .container{
+        width: 100%;
         max-width: 720px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top .container h1{
+        align-self: center;
+    }
+    .top .container .txt{
+        width: 60%;
+    }    
+    .paper{
+        height: auto;
+        background: none;
+        margin-bottom: 150px;
+    }
+    /* .paper .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+    .paper .item{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 50px;
     }
     .paper .item .pic{
+        position: static;    
+        animation: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 70px 0;
+    }
+    .center{
+        border: 0 solid transparent;
+        width: auto;
+        height: auto;
+    }
+    .paper .item .pic > div + div{
+        border: 5px solid #FFB74D;
+        background-color: rgb(202, 199, 199);
+        position: static;        
+        animation: none;
+        width: 200px;
+        height: 200px;
+        margin: 0 20px;
+    }
+    .paper .item .txt, .paper button{
+        position: static;
+    }
+    .teach{
+        margin-bottom: 150px;
+    }
+    .teach .container h2{
+        /* display: inline-block; */
+        text-align: center;
+    }
+    .teach .wrap{
+        flex-flow: column;
+        align-items: center;
+    }
+    .teach .wrap .card{
+        width: 60%;
+        margin-bottom: 50px;
+    }
+    .teach .wrap .card:nth-child(3) .item img{
+        height: 603px;
+    }
+    .teach .wrap .card .item{
+        transform: rotateY(180deg);
+    }
+    .teach .wrap .item .txt h3{
+        font-size: 42px;
+    }
+    .teach .wrap .item .txt p{
+        font-size: 28px;
+    }    
+    .book .item{
+        flex-flow: wrap;
+    }
+    .book .txt{
+        width: 85%;
+    }
+    .book .txt p{
+        margin-bottom: 50px;
+    }
+    .book .autoplay{
+        width: 50%;
+    }
+    .consultant{
+        padding-top: 0;
+        height: auto;
+        background: linear-gradient(167deg, #212121 220px, #B71C1C 220px 640px, #212121 640px);
+        padding-bottom: 150px;        
+    }
+    .consultant .pic{
+        display: none;
+    }
+    .consultant .item{
+        margin-top: 50px;
+    }
+    .consultant .item .txt{
+        width: 80%;
+        display: block;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0px 50px 30px;
+        border-color: transparent transparent #fafafa transparent;
+        position: relative;
+        top: -50px;
+        left: -20px;
+    }
+}
+@media all and (max-width: 767px) and (min-width: 576px){
+    .top .container, .paper .container, .teach .container, .book .container, .consultant .container{
+        width: 95%;
+        max-width: 540px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top{        
+        background: none;
+        height: auto;
+    }
+    .top .container h1{
+        font-size: 80px;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+    .top .container .txt{
+        width: 90%;
+        text-align: center;
+    }
+    .top .container button{    
+        align-self: center;
+        margin-bottom: 100px;    
+    }
+    .paper{
+        height: auto;
+        background: none;
+        margin-bottom: 150px;
+    }
+    /* .paper .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+    .paper .item{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .paper .item .pic{
+        position: static;    
+        animation: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 70px 0;
+    }
+    .center{
+        border: 0 solid transparent;
+        width: auto;
+        height: auto;
+    }
+    .paper .item .pic > div + div{
+        border: 5px solid #FFB74D;
+        background-color: rgb(202, 199, 199);
+        position: static;        
+        animation: none;
+        width: 100px;
+        height: 100px;
+        margin: 0 20px;
+    }
+    .paper .item .pic > div + div h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    .paper .item .pic > div + div img{
         display: none;
     }
     .paper .item .txt, .paper button{
         position: static;
-    }    
-    .paper .item .pic{
-        top: 220px;
-        left: 25%;
+    }
+    .paper .item .txt a{
+        color: #FFB74D;
+        text-decoration: none;
+    }
+    .teach{
+        margin-bottom: 150px;
+    }
+    .teach .container h2{        
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .teach .wrap .card .item{
+        transform: rotateY(180deg);
+    }
+    .teach .wrap .item .txt{
+        display: flex;
+        align-items: center;
+    }
+    .teach .wrap .item .txt h3{
+        font-size: 30px;
+    }
+    .teach .wrap .item .txt p{
+        display: none;
     }
     
+    .book .txt{
+        width: 85%;
+    }
+    .book .txt p{
+        margin-bottom: 70px;
+    }
+    .book .autoplay{
+        display: none;
+    }
+    h2::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0px 50px 30px;
+        border-color: transparent transparent #fafafa transparent;
+        position: relative;
+        top: -50px;
+        left: -20px;
+    }
+    .consultant{
+        padding-top: 0;
+        height: auto;
+        background: none;
+        padding-bottom: 150px;        
+    }
+    .consultant .pic{
+        display: none;
+    }
+    .consultant .item{
+        margin-top: 50px;
+    }
+    .consultant .item .txt{
+        width: 80%;
+        display: block;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0px 50px 30px;
+        border-color: transparent transparent #fafafa transparent;
+        position: relative;
+        top: -50px;
+        left: -20px;
+    }
+}
+
+@media all and (max-width: 575px){
+    .top .container, .paper .container, .teach .container, .book .container, .consultant .container{
+        width: 100%;
+        max-width: 540px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        color: #FFB74D;
+    }
+    .top{        
+        background: none;
+        height: auto;
+    }
+    .top .container h1{
+        font-size: 60px;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+    .top .container .txt{
+        width: 85%;
+        text-align: center;
+    }
+    .top .container .txt p{
+        font-size: 20px;
+    }
+    .top .container button{    
+        align-self: center;
+        margin-bottom: 50px;    
+    }
+    .paper{
+        height: auto;
+        background: none;
+        margin-bottom: 50px;
+    }    
+    .paper .item{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .paper .item .pic{
+        width: 100%;
+        position: static;    
+        animation: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0 70px;
+    }
+    .center{
+        border: 0 solid transparent;
+        width: auto;
+        height: auto;
+    }
+    .paper .item .pic > div + div{
+        border: 5px solid #FFB74D;
+        background-color: rgb(202, 199, 199);
+        position: static;        
+        animation: none;
+        width: 90px;
+        height: 90px;
+        margin: 0 20px;
+    }
+    .paper .item .pic > div + div h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    .paper .item .pic > div + div img{
+        display: none;
+    }
+    .paper .item .txt{
+        width: 85%;
+    }
+    .paper .item .txt, .paper button{
+        position: static;
+    }
+    .paper .item .txt a{
+        color: #FFB74D;
+        text-decoration: none;
+    }
+    .teach{
+        margin-bottom: 100px;
+    }
+    .teach .wrap{
+        width: 95%;
+    }
+    .teach .title p{
+        width: 85%;
+        font-size: 22px;
+    }
+    .teach .container h2{        
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .teach .wrap .card .item{
+        transform: rotateY(180deg);
+    }
+    .teach .wrap .item .txt{
+        display: flex;
+        align-items: center;
+    }
+    .teach .wrap .item .txt h3{
+        line-height: 1;
+        font-size: 30px;
+    }
+    .teach .wrap .item .txt p{
+        display: none;
+    }
+    .teach .wrap .card:hover .item{
+        transform: rotateY(0deg);
+    }
+    
+    .book{
+        margin-bottom: 0;
+    }
+    .book .item{
+        margin-top: 0;
+    }
+    .book .txt{
+        width: 85%;
+    }
+    .book .txt p{
+        margin-bottom: 50px;
+    }
+    .book .autoplay{
+        display: none;
+    }    
+    .consultant{
+        padding-top: 0;
+        height: auto;
+        background: none;
+        padding-bottom: 150px;        
+    }
+    .consultant .pic{
+        display: none;
+    }
+    .consultant .item{
+        margin-top: 0;
+    }
+    .consultant .item .txt{
+        width: 80%;
+        display: block;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .consultant .item .txt p{
+        padding-bottom: 50px;
+    }
+    h2::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0px 50px 30px;
+        border-color: transparent transparent #fafafa transparent;
+        position: relative;
+        top: -50px;
+        left: -20px;
+    }
 }
 
 

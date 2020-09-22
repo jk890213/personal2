@@ -21,6 +21,9 @@ aside li{
     color: #fafafa;
     padding: 30px;
 }
+aside li span{
+    display: block;
+}
 aside li span:hover{
     cursor: pointer;
 }
@@ -29,7 +32,8 @@ aside h3{
     font-size: 28px;
     font-weight: bold;
     color: #fafafa;
-    text-align: center;
+    text-align: start;
+    padding: 0 0 40px 30px;
 }
 main{
     width: 80%;
@@ -65,7 +69,7 @@ main .container h3:hover{
     cursor: pointer;
 }
 main .txt{
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: none;
 }
