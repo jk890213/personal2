@@ -69,11 +69,15 @@ span{
 @media screen and (max-width: 991px){
     .container{
         max-width: 720px;
+        margin-bottom: 100px;
     }
     form{
         width: 90%;
     }
     .pic{
         display: none;
+    }
+    label{
+        font-size: 18px;
     }
 }

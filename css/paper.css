@@ -82,12 +82,15 @@ footer{
 
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) and(min-width: 576px){
     .paper{
         max-width: 720px;
     }
+    .container .item:first-child{
+        margin-bottom: 70px;
+    }
     .paper .container .item + .item{
-        margin-bottom: 150px;
+        margin-bottom: 70px;
     }
     .container .item + .item .txt{
         width: 100%;
@@ -100,5 +103,40 @@ footer{
     }
     .container .item + .item .pic{
         display: none;
+    }
+    footer{
+        margin-top: 100px;
+    }
+}
+
+@media all and (max-width: 575px){    
+    .paper{
+        max-width: 720px;
+        margin-bottom: 100px;
+    }
+    .container .item h3{
+        font-size: 30px;
+        line-height: 2;
+    }
+    .container .item:first-child{
+        margin-bottom: 70px;
+    }
+    .paper .container .item + .item{
+        margin-bottom: 70px;
+    }
+    .container .item .txt p{    
+        margin-top: 20px;
+    }
+    .container .item + .item .txt{
+        width: 100%;
+    }
+    .container .item .pic{
+        display: none;
+    }
+    .container .item + .item .pic{
+        display: none;
+    }
+    footer{
+        margin-top: 0px;
     }
 }

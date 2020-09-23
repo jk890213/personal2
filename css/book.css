@@ -190,7 +190,21 @@ ol li a{
     
 }
 
-@media screen and (max-width: 991px)/*and (min-width: 992px)*/{
+@media screen and (max-width: 991px) and (min-width: 576px){
+    .wrap h2, .column h2{
+        text-align: center;
+    }
+    h2::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0px 50px 30px;
+        border-color: transparent transparent #fafafa transparent;
+        position: relative;
+        top: -50px;
+        left: -20px;
+    }
     .wrap, .column, ol{
         max-width: 720px;
     }
@@ -207,7 +221,7 @@ ol li a{
         font-size: 36px;
     }
     .column{
-        width: 95%;
+        width: 100%;
     }
     .column .container .item{
         margin: 30px auto;
@@ -221,7 +235,7 @@ ol li a{
         order: -1;
     }
     .column .container .item .txt{
-        width: 95%;
+        width: 100%;
         flex-shrink: 1;
         
     }
@@ -234,4 +248,73 @@ ol li a{
     .column .container .item > :first-child{ 
         margin-right: 0;
     }
+}
+
+@media screen and (max-width: 575px){
+    .wrap h2, .column h2{
+        text-align: center;
+    }
+    h2::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0px 50px 30px;
+        border-color: transparent transparent #fafafa transparent;
+        position: relative;
+        top: -50px;
+        left: -20px;
+    }
+    .wrap, .column, ol{
+        max-width: 720px;
+    }
+    .wrap{
+        width: 95%;
+        margin-bottom: 100px;
+    }    
+    .wrap .item{
+        width: 75%;
+        padding-top: 50px;
+        margin-bottom: 100px;
+    }
+    .wrap .item .txt h3{
+        font-size: 28px;
+    }
+    .wrap .item .txt p{
+        font-size: 20px;
+    }
+    .column{
+        width: 100%;
+    }
+    .column .container .item .txt h3{
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+    .column .container .item{
+        margin: 30px auto;
+    }
+    .column .container .item{
+        flex-flow: column wrap;
+    }
+    .column .container .item .pic{
+        width: 50%;
+        flex-shrink: 1;
+        order: -1;
+    }
+    .column .container .item .txt{
+        width: 100%;
+        flex-shrink: 1;
+        
+    }
+    .column .container .item .txt .content{
+        width: 100%;
+        padding: 0;
+    }
+    .column .container .item .txt:nth-child(2), .column .container .item .txt:nth-child(4){
+        justify-content: center;
+    }
+    .column .container .item > :first-child{ 
+        margin-right: 0;
+    }
+
 }

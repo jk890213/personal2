@@ -694,7 +694,7 @@ button:hover a{
         height: auto;
     }
     .top .container h1{
-        font-size: 60px;
+        font-size: 40px;
         align-self: center;
         margin-bottom: 50px;
     }
@@ -703,7 +703,7 @@ button:hover a{
         text-align: center;
     }
     .top .container .txt p{
-        font-size: 20px;
+        font-size: 18px;
     }
     .top .container button{    
         align-self: center;
@@ -726,6 +726,7 @@ button:hover a{
         animation: none;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         margin: 20px 0 70px;
     }
     .center{
@@ -743,7 +744,8 @@ button:hover a{
         margin: 0 20px;
     }
     .paper .item .pic > div + div h3{
-        font-size: 30px;
+        width: 50px;
+        font-size: 20px;
         text-align: center;
     }
     .paper .item .pic > div + div img{
@@ -787,10 +789,6 @@ button:hover a{
     .teach .wrap .item .txt p{
         display: none;
     }
-    .teach .wrap .card:hover .item{
-        transform: rotateY(0deg);
-    }
-    
     .book{
         margin-bottom: 0;
     }
@@ -839,6 +837,12 @@ button:hover a{
         position: relative;
         top: -50px;
         left: -20px;
+    }
+    button{
+        font-size: 20px;
+        width: 140px;
+        height: 45px;
+        
     }
 }
 

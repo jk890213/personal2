@@ -102,6 +102,7 @@ main p{
         display: flex;
         justify-content: center;
     }
+
     aside{
         display: none;
     }
@@ -109,9 +110,10 @@ main p{
         width: 100%;
     }
     main .container h3{
-        font-size: 30px;
+        font-size: 24px;
     }
     main p{
         padding: 0 30px 30px 50px;
     }
+    
 }
