@@ -114,6 +114,9 @@ footer{
         max-width: 720px;
         margin-bottom: 100px;
     }
+    .paper .container{
+        padding: 0 15px;
+    }
     .container .item h3{
         font-size: 30px;
         line-height: 2;
@@ -126,6 +129,7 @@ footer{
     }
     .container .item .txt p{    
         margin-top: 20px;
+        padding: 0 13px;
     }
     .container .item + .item .txt{
         width: 100%;
