@@ -89,7 +89,7 @@ an_talk.to('.no1', 1, {
 var scence1 = new ScrollMagic.Scene({
     triggleElement: '.wrap',
     triggleHook: 0,
-    duration: '2000%'
+    duration: '1000%'
 }).setPin('.wrap').setTween(an_talk).addIndicators().addTo(controller);
 
 

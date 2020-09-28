@@ -82,7 +82,7 @@ footer{
 
 }
 
-@media screen and (max-width: 991px) and(min-width: 576px){
+@media screen and (max-width: 991px) and (min-width: 576px){
     .paper{
         max-width: 720px;
     }
@@ -102,6 +102,9 @@ footer{
         display: none;
     }
     .container .item + .item .pic{
+        display: none;
+    }
+    .container .item:nth-child(2) .pic img{
         display: none;
     }
     footer{
