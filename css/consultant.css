@@ -6,6 +6,7 @@
 .wrap{
     overflow: hidden;
     height: calc(100vh - 80px);
+    position: relative;
 
 }
 .background{
@@ -14,10 +15,9 @@
     background-size: cover;
     background-position: center center;
     width: 100%;
-    min-width: 1200px;
     height: calc(100vh - 80px);
 }
-.wrap div + div{
+.wrap .talk{
     border: 2px solid #fafafa;
     border-radius: 30px;
     display: flex;
@@ -25,13 +25,14 @@
     align-items: center;
     padding: 1em;
     background-color: rgba(0, 0, 0, .7);
+    z-index: 2;
 }
 .wrap p{
     line-height: 1.6;
     text-align: center;
     font-weight: bold;
 }
-.wrap div:nth-child(2){
+.wrap div:nth-child(1){
     width: 454px;
     height: 148px;
     position: absolute;
@@ -39,41 +40,41 @@
     left: 450px;
     opacity: 0;
 }
-.wrap div:nth-child(3){
+.wrap div:nth-child(2){
     width: 524px;
     height: 238px;
     position: absolute;
     right: 400px;
-    top: 500px;
-    opacity: 0
+    top: 450px;
+    opacity: 0;
 
 }
-.wrap div:nth-child(4){
+.wrap div:nth-child(3){
     width: 380px;
     height: 200px;
     position: absolute;
     right: 450px;
     top: 250px;
-    opacity: 0
+    opacity: 0;
 
 }
-.wrap div:nth-child(5){
+.wrap div:nth-child(4){
     width: 400px;
     height: 180px;
     position: absolute;
     left: 25%;
     bottom: 40%;
-    opacity: 0
+    opacity: 0;
 
 }
-.wrap div:nth-child(6){
+.wrap div:nth-child(5){
     width: 310px;
     height: 250px;
     position: absolute;
     right: 50%;
     bottom: 50%;
     transform: translate(50%, 15%);
-    opacity: 0
+    opacity: 0;
 
 }
 button{
@@ -85,4 +86,267 @@ button{
     bottom: 50%;
     transform: translate(50%, 200%);
     opacity: 0;
+    z-index: 2;
+}
+
+@media all and (max-width: 1339px) and (min-width: 992px){
+    
+    .wrap div:nth-child(1){
+        width: 454px;
+        height: 148px;
+        position: absolute;
+        top: 100px;
+        left: 250px;
+    }
+    .wrap div:nth-child(2){
+        width: 524px;
+        height: 238px;
+        position: absolute;
+        right: 180px;
+        top: 350px; 
+    }
+    .wrap div:nth-child(3){
+        width: 380px;
+        height: 200px;
+        position: absolute;
+        right: 200px;
+        top: 100px;
+    }
+    .wrap div:nth-child(4){
+        width: 400px;
+        height: 180px;
+        position: absolute;
+        left: 25%;
+        bottom: 40%;
+    }
+    .wrap div:nth-child(5){
+        width: 310px;
+        height: 250px;
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 15%);
+    }
+    button{
+        width: 170px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, .7);
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 200%);
+    }
+}
+
+@media all and (max-width: 991px) and (min-width: 768px){
+    .background{
+        background-position: center 53%;
+
+    }
+    .wrap div:nth-child(1){
+        width: 454px;
+        height: 148px;
+        position: absolute;
+        top: 100px;
+        left: 250px;
+    }
+    .wrap div:nth-child(2){
+        width: 524px;
+        height: 238px;
+        position: absolute;
+        right: 180px;
+        top: 300px;
+    }
+    .wrap div:nth-child(3){
+        width: 380px;
+        height: 200px;
+        position: absolute;
+        right: 220px;
+        top: 100px;
+    }
+    .wrap div:nth-child(4){
+        width: 400px;
+        height: 180px;
+        position: absolute;
+        left: 25%;
+        bottom: 40%;
+    }
+    .wrap div:nth-child(5){
+        width: 310px;
+        height: 250px;
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 15%);
+    }
+    button{
+        width: 170px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, .7);
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 200%);
+    }
+}
+
+@media all and (max-width: 767px) and (min-width: 400px){
+    .background{
+        background-position: center 53%;
+    }
+    .wrap p{
+        line-height: 1.4;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .wrap div:nth-child(1){
+        width: 360px;
+        height: 120px;
+        position: absolute;
+        top: 100px;
+        left: 120px;
+    }
+    .wrap div:nth-child(2){
+        width: 400px;
+        height: 150px;
+        position: absolute;
+        right: 50px;
+        top: 300px;
+    }
+    .wrap div:nth-child(3){
+        width: 300px;
+        height: 130px;
+        position: absolute;
+        right: 150px;
+        top: 120px;
+    }
+    .wrap div:nth-child(4){
+        width: 300px;
+        height: 130px;
+        position: absolute;
+        left: 20%;
+        bottom: 40%;
+    }
+    .wrap div:nth-child(5){
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 15%);
+    }
+    button{
+        width: 150px;
+        height: 45px;
+        background-color: rgba(0, 0, 0, .7);
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 200%);
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 400px){
+    .background{
+        background-position: 49.5% 53%;
+    }
+    .wrap p{
+        line-height: 1.4;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .wrap div:nth-child(1){
+        width: 280px;
+        height: 90px;
+        position: absolute;
+        top: 250px;
+        left: 20px;
+    }
+    .wrap div:nth-child(2){
+        width: 280px;
+        height: 140px;
+        position: absolute;
+        left: 20px;
+        top: 200px;
+    }
+    .wrap div:nth-child(3){
+        width: 280px;
+        height: 100px;
+        position: absolute;
+        left: 20px;
+        top: 190px;    
+    }
+    .wrap div:nth-child(4){
+        width: 280px;
+        height: 100px;
+        position: absolute;
+        left: 20px;
+        top: 170px;
+    }
+    .wrap div:nth-child(5){
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        left: 70px;
+        top: 130px;
+        transform: translate(0, 0);
+    }
+    button{
+        width: 150px;
+        height: 45px;
+        background-color: rgba(0, 0, 0, .7);
+        position: absolute;
+        left: 20px;
+        top: 45%;
+        transform: translate(50%, 200%);
+        font-size: 20px;
+    }
+
+
+    /* 為何float不行 */
+    /* .wrap div:nth-child(1), .wrap div:nth-child(2), .wrap div:nth-child(3), .wrap div:nth-child(4), .wrap div:nth-child(5), .wrap div:nth-child(6){
+        position: static;
+        float: left;
+    }
+    .wrap div:nth-child(1){
+        width: 280px;
+        height: 120px;
+    }
+    .wrap div:nth-child(2){
+        width: 280px;
+        height: 90px;
+    }
+    .wrap div:nth-child(3){
+        width: 280px;
+        height: 140px;
+    }
+    .wrap div:nth-child(4){
+        width: 280px;
+        height: 100px;
+    
+    }
+    .wrap div:nth-child(5){
+        width: 280px;
+        height: 100px;
+    
+    }
+    .wrap div:nth-child(6){
+        width: 200px;
+        height: 150px;
+        transform: translate(0, 0);    
+    }
+    button{
+        width: 150px;
+        height: 45px;
+        background-color: rgba(0, 0, 0, .7);
+        position: absolute;
+        left: 20px;
+        top: 45%;
+        transform: translate(50%, 200%);
+        opacity: 0;
+        font-size: 20px;
+    } */
 }
