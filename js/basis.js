@@ -21,14 +21,25 @@ $(document).ready(function(){
 	});
 
 	//為何不能停止預設行為?
-	var noa = document.getElementsByClassName("-on")[0];
+	// var noa = document.getElementsByClassName("-on")[0];
 	// noa.addEventListener("click", function(){
 	// 	alert("hi");
 	// });
 
-	noa.addEventListener("click", function(e){
-		e.preventDeault();
-	});
+	// noa.addEventListener("click", function(e){
+	// 	e.preventDeault();
+	// });
+
+	// $('a.-on').click(function(e){
+	// 	e.preventDeault();
+	// });
+
+	
+    $('#goTop').click(function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+    });
 
 
 

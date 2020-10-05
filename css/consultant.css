@@ -32,7 +32,7 @@
     text-align: center;
     font-weight: bold;
 }
-.wrap div:nth-child(1){
+.wrap>div:nth-child(2){
     width: 454px;
     height: 148px;
     position: absolute;
@@ -40,7 +40,7 @@
     left: 450px;
     opacity: 0;
 }
-.wrap div:nth-child(2){
+.wrap>div:nth-child(3){
     width: 524px;
     height: 238px;
     position: absolute;
@@ -49,7 +49,7 @@
     opacity: 0;
 
 }
-.wrap div:nth-child(3){
+.wrap>div:nth-child(4){
     width: 380px;
     height: 200px;
     position: absolute;
@@ -58,7 +58,7 @@
     opacity: 0;
 
 }
-.wrap div:nth-child(4){
+.wrap>div:nth-child(5){
     width: 400px;
     height: 180px;
     position: absolute;
@@ -67,7 +67,7 @@
     opacity: 0;
 
 }
-.wrap div:nth-child(5){
+.wrap>div:nth-child(6){
     width: 310px;
     height: 250px;
     position: absolute;
@@ -87,6 +87,60 @@ button{
     transform: translate(50%, 200%);
     opacity: 0;
     z-index: 2;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+#direction{
+    width: 150px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 300px;
+    /* left: 500px; */
+    z-index: 20;
+
+    animation-name: shake;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+.square{
+    width: 100px;
+    height: 200px;
+    background-color: rgba(33, 33, 33, .9);
+    color: #fafafa;
+
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    writing-mode: vertical-lr;
+
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 100px;
+    border-color: rgba(33, 33, 33, .9) transparent transparent transparent;
+
+    /* position: absolute;
+    left: 0;
+    top: 0; */
 }
 
 @media all and (max-width: 1339px) and (min-width: 992px){

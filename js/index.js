@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
-    $(function(){ $('#scroll').click(function(){ 
+    $('#scroll').click(function(){ 
         $('html,body').animate({scrollTop:$('#teach').offset().top -50}, 500);});  
-    });
+    
+
+    
 
     $('#lightSlider').lightSlider({
         item:1,
@@ -29,5 +31,7 @@ $(document).ready(function(){
                   }
             }
         ]
-    });  
+    });
+    
+
 });
