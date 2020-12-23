@@ -27,12 +27,12 @@ $(document).ready(function(){
 	// });
 
 	// noa.addEventListener("click", function(e){
-	// 	e.preventDeault();
+	// 	e.preventDefault
 	// });
 
-	// $('a.-on').click(function(e){
-	// 	e.preventDeault();
-	// });
+	$('a.-on').click(function(e){
+		e.preventDefault();
+	});
 
 	
     $('#goTop').click(function(){

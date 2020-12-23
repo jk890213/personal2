@@ -60,6 +60,7 @@ form.addEventListener("submit", function(e){
         alert("資料已送出，我們將盡快回覆您!");
     }else{
         e.preventDefault();
+        alert('資料尚未填寫完成');
     }
 });
 

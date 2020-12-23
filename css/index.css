@@ -712,7 +712,7 @@ button:hover a{
     .paper{
         height: auto;
         background: none;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
     }    
     .paper .item{
         display: flex;
@@ -790,7 +790,7 @@ button:hover a{
         display: none;
     }
     .book{
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
     .book .item{
         margin-top: 0;
